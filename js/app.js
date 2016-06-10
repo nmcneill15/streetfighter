@@ -13,7 +13,7 @@ $(document).ready(function() {
   $(".ryu-ready").on("mousedown", function() {
     $(this).hide();
     $(".ryu-throwing").show();
-    $(".hadouken").show().animate({marginLeft: 1000}, 1000, function() {
+    $(".hadouken").finish().show().animate({marginLeft: 1000}, 1000, function() {
       $(".hadouken").css("margin-left", 0).hide();
     });
     var sound = document.getElementById("sound");
